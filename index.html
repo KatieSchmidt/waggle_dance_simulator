@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>Honey Bee Waggle</title>
+  </head>
+  <body>
+    <section class="section__header">
+      <div class="header">
+        <div class="header__image"><img src="#" alt="honey bee logo" /></div>
+        <div class="header__text">
+          <h1 class="header__text-exclamation">Lets Do The Waggle!</h1>
+        </div>
+      </div>
+    </section>
+    <main>
+      <section class="section__about-the-dance">
+        <div class="about-the-dance">
+          <div class="about-the-dance__what-it-is">
+            <h2 class="about-the-dance__what-it-is__header">
+              What is the Waggle Dance?
+            </h2>
+            <p class="about-the-dance__what-it-is__answer">
+              The waggle dance is a dance done by honey bees! When a honey bee
+              finds a food source (like a patch of yummy flowers) it brings some
+              food back to the hive. When it arrives, it needs a way to let the
+              other honey bees know where it found food so that they can go get
+              some also. This is where the waggle dance comes in. The honey bee
+              does a special dance to show the other bees where the food is
+              located.
+            </p>
+          </div>
+          <div class="about-the-dance__how-it-looks">
+            <h2 class="about-the-dance__how-it-looks__header">
+              What does it look like?
+            </h2>
+            <div class="about-the-dance__how-it-looks__answer">
+              <p class="about-the-dance__how-it-looks__answer-paragraph">
+                Take a look at this short video. The honey bee that wiggles and
+                then walks in a circle is doing a waggle dance.
+              </p>
+              <video
+                class="about-the-dance__how-it-looks__answer-video"
+                autoplay
+                muted
+                loop
+              >
+                <source src="./img/waggle.mp4" type="video/mp4" />
+                Your browser is not supported!
+              </video>
+            </div>
+          </div>
+          <div class="about-the-dance__how-it-is-choreographed">
+            <h2 class="how-it-is-choreographed__header">How is it Decoded?</h2>
+            <div class="about-the-dance__how-it-is-choreographed__answer">
+              <p
+                class="about-the-dance__how-it-is-choreographed__answer-paragraph"
+              >
+                The bee begins by waggling its boddy from side to side in a
+                straight line. Then it circles its way back to where it began.
+                The angle of the waggle in reference to the location of the sun
+                specifies the direction/degree to travel from the hive. The
+                length of time that the bee spends waggling before circling back
+                to its starting point signifies the distance from the hive.
+                Biologists believe that for every 1 second waggled, the source
+                is located 1K from the hive.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section__about-the-generator">
+        <div class="about-the-generator">
+          <div class="about-the-generator__how-it-works">
+            <h2 class="about-the-generator__how-it-works__header">
+              Let's Dance!
+            </h2>
+            <p class="about-the-generator__how-it-works__paragraph">
+              This is a simulation of how the bees would make a waggle dance.
+              Click on a patch of flowers (food source) to see an example of the
+              waggle dance a bee would do upon arrival back in the hive after
+              visiting that food source!
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="section__simulation">
+        <div class="simulation">
+          <div class="simulation__sky">
+            <img src="#" alt="sun shining" class="simulation__sky-sun" />
+          </div>
+          <div class="simulation__field">
+            <div class="simulation__field-hive">
+              <img
+                src="#"
+                alt="bee hive in center of field"
+                class="simulation__field-hive-img"
+              />
+            </div>
+            <div class="simulation__field__quadrant-left-top">
+              <div class="simulation__field-flower">
+                <img
+                  src="#"
+                  alt="flower in field"
+                  class="simulation__field-flower"
+                />
+              </div>
+            </div>
+            <div class="simulation__field__quadrant-right-top">
+              <div class="simulation__field-flower">
+                <img
+                  src="#"
+                  alt="flower in field"
+                  class="simulation__field-flower"
+                />
+              </div>
+            </div>
+            <div class="simulation__field__quadrant-left-bottom">
+              <div class="simulation__field-flower">
+                <img
+                  src="#"
+                  alt="flower in field"
+                  class="simulation__field-flower"
+                />
+              </div>
+            </div>
+            <div class="simulation__field__quadrant-right-bottom">
+              <div class="simulation__field-flower">
+                <img
+                  src="#"
+                  alt="flower in field"
+                  class="simulation__field-flower"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer"></footer>
+    <script src="./main.js"></script>
+  </body>
+</html>
