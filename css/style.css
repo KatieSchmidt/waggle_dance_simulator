@@ -1,0 +1,90 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box; }
+
+.section__simulation {
+  position: relative;
+  height: 100vw;
+  max-height: 800px; }
+
+.simulation {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  height: 90vw;
+  width: 90vw;
+  max-width: 640px;
+  max-height: 640px; }
+  .simulation__sky {
+    height: 25%;
+    width: 100%;
+    background-color: skyblue;
+    position: relative; }
+    .simulation__sky-sun {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 5rem;
+      height: 5rem; }
+  .simulation__field {
+    height: 75%;
+    width: 100%;
+    background-color: #03bb03;
+    position: relative; }
+    .simulation__field-hive {
+      position: absolute;
+      z-index: 1;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 2rem;
+      height: 2rem; }
+      .simulation__field-hive-img {
+        height: 2rem;
+        width: 2rem; }
+    .simulation__field-flower {
+      height: 2rem;
+      width: 2rem; }
+    .simulation__field__quadrant-left-top {
+      position: absolute;
+      border: 1px red solid;
+      top: 0;
+      left: 0;
+      height: 50%;
+      width: 50%;
+      background-color: lime; }
+    .simulation__field__quadrant-right-top {
+      position: absolute;
+      border: 1px red solid;
+      top: 0;
+      right: 0;
+      height: 50%;
+      width: 50%;
+      background-color: lime; }
+    .simulation__field__quadrant-left-bottom {
+      position: absolute;
+      border: 1px red solid;
+      bottom: 0;
+      left: 0;
+      height: 50%;
+      width: 50%;
+      background-color: lime; }
+    .simulation__field__quadrant-right-bottom {
+      position: absolute;
+      border: 1px red solid;
+      bottom: 0;
+      right: 0;
+      height: 50%;
+      width: 50%;
+      background-color: lime; }

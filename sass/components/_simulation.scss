@@ -1,10 +1,90 @@
-// .simulation {
-//   height: 100%;
-//   width: 100%;
+.simulation {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  height: 90vw;
+  width: 90vw;
+  max-width: 640px;
+  max-height: 640px;
 
-//   &__sky {
-//     height: 25%;
-//     width: 100%;
-//     background-color: skyblue;
-//   }
-// }
+  &__sky {
+    height: 25%;
+    width: 100%;
+    background-color: skyblue;
+    position: relative;
+
+    &-sun {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 5rem;
+      height: 5rem;
+    }
+  }
+
+  &__field {
+    height: 75%;
+    width: 100%;
+    background-color: rgb(3, 187, 3);
+    position: relative;
+
+    &-hive {
+      position: absolute;
+      z-index: 1;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 2rem;
+      height: 2rem;
+
+      &-img {
+        height: 2rem;
+        width: 2rem;
+      }
+    }
+
+    &-flower {
+      height: 2rem;
+      width: 2rem;
+    }
+
+    &__quadrant-left-top {
+      position: absolute;
+      border: 1px red solid;
+      top: 0;
+      left: 0;
+      height: 50%;
+      width: 50%;
+      background-color: lime;
+    }
+    &__quadrant-right-top {
+      position: absolute;
+      border: 1px red solid;
+      top: 0;
+      right: 0;
+      height: 50%;
+      width: 50%;
+      background-color: lime;
+    }
+    &__quadrant-left-bottom {
+      position: absolute;
+      border: 1px red solid;
+      bottom: 0;
+      left: 0;
+      height: 50%;
+      width: 50%;
+      background-color: lime;
+    }
+    &__quadrant-right-bottom {
+      position: absolute;
+      border: 1px red solid;
+      bottom: 0;
+      right: 0;
+      height: 50%;
+      width: 50%;
+      background-color: lime;
+    }
+  }
+}

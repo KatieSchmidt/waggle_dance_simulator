@@ -1,5 +1,7 @@
-// .section {
-//   &__simulation {
-//     height: 100vh;
-//   }
-// }
+.section {
+  &__simulation {
+    position: relative;
+    height: 100vw;
+    max-height: 800px;
+  }
+}
