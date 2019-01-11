@@ -19,8 +19,8 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      width: 5rem;
-      height: 5rem;
+      width: 6rem;
+      height: 6rem;
     }
   }
 
@@ -36,18 +36,24 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      width: 2rem;
-      height: 2rem;
+      width: 4rem;
+      height: 4rem;
 
       &-img {
-        height: 2rem;
-        width: 2rem;
+        height: 4rem;
+        width: 4rem;
       }
     }
 
     &-flower {
       height: 2rem;
       width: 2rem;
+    }
+
+    &__quadrant-relative-div {
+      position: relative;
+      height: 100%;
+      width: 100%;
     }
 
     &__quadrant-left-top {
@@ -57,7 +63,6 @@
       left: 0;
       height: 50%;
       width: 50%;
-      background-color: lime;
     }
     &__quadrant-right-top {
       position: absolute;
@@ -66,7 +71,6 @@
       right: 0;
       height: 50%;
       width: 50%;
-      background-color: lime;
     }
     &__quadrant-left-bottom {
       position: absolute;
@@ -75,7 +79,6 @@
       left: 0;
       height: 50%;
       width: 50%;
-      background-color: lime;
     }
     &__quadrant-right-bottom {
       position: absolute;
@@ -84,7 +87,146 @@
       right: 0;
       height: 50%;
       width: 50%;
-      background-color: lime;
     }
   }
+}
+
+#flower-1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#flower-2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#flower-3 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#flower-4 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#flower-5 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#flower-6 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#flower-7 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#flower-8 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#flower-9 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#flower-10 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#flower-11 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#flower-12 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#flower-13 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#flower-14 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#flower-15 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#flower-16 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#flower-17 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#flower-18 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#flower-19 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#flower-20 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
