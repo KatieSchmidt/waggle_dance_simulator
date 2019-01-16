@@ -50,20 +50,21 @@
       z-index: 5;
       height: 2rem;
       width: 2rem;
+      cursor: pointer;
     }
 
     &__quadrant-relative-div {
       position: relative;
       height: 100%;
-      width: 100%;
+      width: 75%;
     }
 
     &__quadrant-left-top {
       position: absolute;
       top: 0;
-      left: 0;
+      left: 12%;
       height: 50%;
-      width: 50%;
+      width: 48%;
     }
     &__quadrant-right-top {
       position: absolute;
@@ -96,6 +97,7 @@
   transform: translate(-50%, -50%);
 }
 
+//bottom right
 #flower_2 {
   position: absolute;
   top: 0;
@@ -110,6 +112,7 @@
   transform: translate(-50%, -50%);
 }
 
+//full right
 #flower_4 {
   position: absolute;
   top: 50%;
@@ -117,6 +120,7 @@
   transform: translate(-50%, -50%);
 }
 
+//bottom
 #flower_5 {
   position: absolute;
   top: 100%;
@@ -138,6 +142,7 @@
   transform: translate(-50%, -50%);
 }
 
+//bottom
 #flower_8 {
   position: absolute;
   top: 100%;
@@ -145,6 +150,7 @@
   transform: translate(-50%, -50%);
 }
 
+//bottom left
 #flower_9 {
   position: absolute;
   top: 100%;
@@ -228,3 +234,19 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+// .top-5 {
+//   top: 0%;
+// }
+// .top-4 {
+//   top: 20%;
+// }
+// .top-3 {
+//   top: 40%;
+// }
+// .top-2 {
+//   top: %;
+// }
+// .top-1 {
+//   top: 100%;
+// }

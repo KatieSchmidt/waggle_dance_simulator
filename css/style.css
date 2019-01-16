@@ -16,6 +16,11 @@ body {
   height: 100vw;
   max-height: 800px; }
 
+.section__simulation-2 {
+  position: relative;
+  height: 100vw;
+  max-height: 800px; }
+
 .simulation {
   overflow: hidden;
   position: absolute;
@@ -57,17 +62,18 @@ body {
     .simulation__field-flower {
       z-index: 5;
       height: 2rem;
-      width: 2rem; }
+      width: 2rem;
+      cursor: pointer; }
     .simulation__field__quadrant-relative-div {
       position: relative;
       height: 100%;
-      width: 100%; }
+      width: 75%; }
     .simulation__field__quadrant-left-top {
       position: absolute;
       top: 0;
-      left: 0;
+      left: 12%;
       height: 50%;
-      width: 50%; }
+      width: 48%; }
     .simulation__field__quadrant-right-top {
       position: absolute;
       top: 0;
@@ -206,3 +212,116 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%); }
+
+.simulation-2 {
+  background-color: #03bb03;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  height: 90%;
+  width: 90%;
+  max-width: 640px;
+  max-height: 640px; }
+  .simulation-2__sky {
+    height: 25%;
+    width: 100%;
+    background-color: skyblue;
+    position: relative; }
+    .simulation-2__sky-sun {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 6rem;
+      height: 6rem; }
+  .simulation-2__field {
+    height: 75%;
+    width: 75%;
+    margin-left: 12.5%;
+    background-color: #03bb03;
+    position: relative; }
+    .simulation-2__field-hive {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 4rem;
+      height: 4rem; }
+      .simulation-2__field-hive-img {
+        height: 4rem;
+        width: 4rem; }
+  .simulation-2__flower-img {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    height: 2rem;
+    width: 2rem; }
+
+.x-coordinate__center {
+  left: 50%; }
+
+.x-coordinate__negative-5 {
+  left: 0%; }
+
+.x-coordinate__negative-4 {
+  left: 10%; }
+
+.x-coordinate__negative-3 {
+  left: 20%; }
+
+.x-coordinate__negative-2 {
+  left: 30%; }
+
+.x-coordinate__negative-1 {
+  left: 40%; }
+
+.x-coordinate__positive-5 {
+  left: 100%; }
+
+.x-coordinate__positive-4 {
+  left: 90%; }
+
+.x-coordinate__positive-3 {
+  left: 80%; }
+
+.x-coordinate__positive-2 {
+  left: 70%; }
+
+.x-coordinate__positive-1 {
+  left: 60%; }
+
+.y-coordinate__center {
+  top: 50%; }
+
+.y-coordinate__positive-5 {
+  top: 0%; }
+
+.y-coordinate__positive-4 {
+  top: 10%; }
+
+.y-coordinate__positive-3 {
+  top: 20%; }
+
+.y-coordinate__positive-2 {
+  top: 30%; }
+
+.y-coordinate__positive-1 {
+  top: 40%; }
+
+.y-coordinate__negative-5 {
+  top: 100%; }
+
+.y-coordinate__negative-4 {
+  top: 90%; }
+
+.y-coordinate__negative-3 {
+  top: 80%; }
+
+.y-coordinate__negative-2 {
+  top: 70%; }
+
+.y-coordinate__negative-1 {
+  top: 60%; }
+
+.one {
+  border: 1px red solid; }
