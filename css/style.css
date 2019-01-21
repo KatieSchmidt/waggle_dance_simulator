@@ -21,6 +21,11 @@ body {
   height: 100vw;
   max-height: 800px; }
 
+.section__animation {
+  position: relative;
+  height: 100vw;
+  max-height: 800px; }
+
 .simulation {
   overflow: hidden;
   position: absolute;
@@ -325,3 +330,134 @@ body {
 
 .one {
   border: 1px red solid; }
+
+.animation {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 90%;
+  width: 90%;
+  transform: translate(-50%, -50%);
+  max-width: 640px;
+  max-height: 640px; }
+  .animation__canvas {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    background-color: gold; }
+  .animation__button-toggle {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    padding: 3px;
+    border-radius: 5px;
+    z-index: 100;
+    box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.1); }
+    .animation__button-toggle:focus {
+      outline: 0;
+      box-shadow: 0.4rem 0.4rem 0.5rem rgba(0, 0, 0, 0.1); }
+    .animation__button-toggle:hover {
+      box-shadow: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.1); }
+    .animation__button-toggle:active {
+      box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.1); }
+  .animation__mover {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    animation-timing-function: linear;
+    animation: moveBoxInPath;
+    animation-iteration-count: infinite;
+    animation-play-state: paused; }
+    .animation__mover-5 {
+      animation-duration: 12s; }
+    .animation__mover-4 {
+      animation-duration: 10s; }
+    .animation__mover-3 {
+      animation-duration: 8s; }
+    .animation__mover-2 {
+      animation-duration: 6s; }
+    .animation__mover-1 {
+      animation-duration: 4s; }
+    .animation__mover-div {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      animation: moveBee;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+      animation-play-state: paused; }
+      .animation__mover-div-5 {
+        animation-duration: 12s; }
+      .animation__mover-div-4 {
+        animation-duration: 10s; }
+      .animation__mover-div-3 {
+        animation-duration: 8s; }
+      .animation__mover-div-2 {
+        animation-duration: 6s; }
+      .animation__mover-div-1 {
+        animation-duration: 4s; }
+  .animation__image {
+    width: 6rem;
+    height: 6rem;
+    animation: waggle;
+    animation-duration: 0.25s;
+    animation-iteration-count: infinite;
+    animation-play-state: paused; }
+  .animation__turner {
+    position: absolute;
+    bottom: 0;
+    left: calc(50% - 6rem/ 2);
+    height: 6rem;
+    width: 6rem;
+    animation: turnBee;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-play-state: paused; }
+    .animation__turner-5 {
+      animation-duration: 12s; }
+    .animation__turner-4 {
+      animation-duration: 10s; }
+    .animation__turner-3 {
+      animation-duration: 8s; }
+    .animation__turner-2 {
+      animation-duration: 6s; }
+    .animation__turner-1 {
+      animation-duration: 4s; }
+
+@keyframes waggle {
+  0% {
+    transform: rotate(0deg); }
+  50% {
+    transform: rotate(-20deg); }
+  100% {
+    transform: rotate(20deg); } }
+
+@keyframes turnBee {
+  35% {
+    transform: rotate(0deg); }
+  50% {
+    transform: rotate(180deg); }
+  85% {
+    transform: rotate(180deg); }
+  100% {
+    transform: rotate(0deg); } }
+
+@keyframes moveBee {
+  35%,
+  50% {
+    transform: translateY(calc(-100% + 6rem)); }
+  85%,
+  100% {
+    transform: translateY(0%); } }
+
+@keyframes moveBoxInPath {
+  35% {
+    transform: rotate(0deg); }
+  50% {
+    transform: rotate(180deg); }
+  85% {
+    transform: rotate(180deg); }
+  100% {
+    transform: rotate(0deg); } }
