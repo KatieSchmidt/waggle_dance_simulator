@@ -53,6 +53,12 @@
     transform: translate(-50%, -50%);
     height: 2rem;
     width: 2rem;
+    border-radius: 50%;
+
+    &:focus,
+    &:hover {
+      box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.5);
+    }
   }
 }
 
