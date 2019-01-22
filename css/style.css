@@ -25,6 +25,9 @@ body {
   position: relative;
   height: 100vw;
   max-height: 800px; }
+  .section__animation-closed {
+    height: 0;
+    visibility: hidden; }
 
 .simulation-2 {
   background-color: #03bb03;
@@ -175,7 +178,8 @@ body {
     padding: 3px;
     position: absolute;
     right: 1rem;
-    top: 1rem; }
+    top: 1rem;
+    z-index: 100; }
   .animation__mover {
     height: 100%;
     width: 100%;

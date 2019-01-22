@@ -58,5 +58,6 @@ for (var i = 0; i < simulationFieldFlowerImgs.length; i++) {
   simulationFieldFlowerImgs[i].onclick = e => {
     let newFlower = createFlowerObject(e);
     console.log(newFlower);
+    openOrCloseAnimation();
   };
 }
