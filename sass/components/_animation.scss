@@ -41,6 +41,13 @@ $bee-size: 6rem;
     }
   }
 
+  &__button-close {
+    padding: 3px;
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+  }
+
   &__mover {
     height: 100%;
     width: 100%;

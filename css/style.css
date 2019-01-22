@@ -171,6 +171,11 @@ body {
       box-shadow: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.1); }
     .animation__button-toggle:active {
       box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.1); }
+  .animation__button-close {
+    padding: 3px;
+    position: absolute;
+    right: 1rem;
+    top: 1rem; }
   .animation__mover {
     height: 100%;
     width: 100%;
