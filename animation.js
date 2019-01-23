@@ -10,22 +10,51 @@ const animationCanvasTurner = document.getElementById(
 );
 const simulationSection = document.getElementById("section__simulation-2");
 
+const animations = [
+  animationMover,
+  animationMoverDiv,
+  animationTurner,
+  animationImage
+];
+
+function changeSpeedOfAnimation(flowerObject) {
+  let totalSeconds = flowerObject.distanceFromHive * 2 + 2;
+  animationMover.style.animationDuration = `${totalSeconds}s`;
+  animationMoverDiv.style.animationDuration = `${totalSeconds}s`;
+  animationTurner.style.animationDuration = `${totalSeconds}s`;
+}
+
 function changeAngleOfSimulation(flowerObject) {
   animationCanvasTurner.style.webkitTransform = `rotate(${
     flowerObject.angle
   }deg)`;
 }
 
-function openOrCloseAnimation() {
-  if (animationSection.classList.length > 1) {
-    animationSection.classList.remove("section__animation-closed");
-    simulationSection.classList.add("section__simulation-2-closed");
-  } else {
-    animationSection.classList.add("section__animation-closed");
-    simulationSection.classList.remove("section__simulation-2-closed");
+function openAnimation() {
+  animationSection.classList.remove("section__animation-closed");
+  simulationSection.classList.add("section__simulation-2-closed");
+}
+
+function closeAnimation() {
+  animationSection.classList.add("section__animation-closed");
+  simulationSection.classList.remove("section__simulation-2-closed");
+}
+
+function startAnimations(animationList) {
+  for (animation of animationList) {
+    animation.style.animationPlayState = "running";
+    animation.style.WebKitAnimationPlayState = "running";
   }
 }
 
+function stopAnimations(animationList) {
+  for (animation of animationList) {
+    animation.style.animationPlayState = "paused";
+    animation.style.WebKitAnimationPlayState = "paused";
+  }
+}
+
+//this turns the animations on and off
 function toggleAnimations(content) {
   if (
     content.style.animationPlayState === "" ||
@@ -40,12 +69,12 @@ function toggleAnimations(content) {
 }
 
 animationToggler.onclick = () => {
-  toggleAnimations(animationMover);
-  toggleAnimations(animationMoverDiv);
-  toggleAnimations(animationImage);
-  toggleAnimations(animationTurner);
+  for (animation of animations) {
+    toggleAnimations(animation);
+  }
 };
 
 closeButton.onclick = () => {
-  openOrCloseAnimation();
+  closeAnimation();
+  stopAnimations(animations);
 };
