@@ -187,7 +187,15 @@ body {
     position: absolute;
     right: 1rem;
     top: 1rem;
-    z-index: 100; }
+    z-index: 100;
+    box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.1); }
+    .animation__button-close:focus {
+      outline: 0;
+      box-shadow: 0.4rem 0.4rem 0.5rem rgba(0, 0, 0, 0.1); }
+    .animation__button-close:hover {
+      box-shadow: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.1); }
+    .animation__button-close:active {
+      box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.1); }
   .animation__mover {
     height: 100%;
     width: 100%;
@@ -198,16 +206,6 @@ body {
     animation: moveBoxInPath;
     animation-iteration-count: infinite;
     animation-play-state: paused; }
-    .animation__mover-5 {
-      animation-duration: 12s; }
-    .animation__mover-4 {
-      animation-duration: 10s; }
-    .animation__mover-3 {
-      animation-duration: 8s; }
-    .animation__mover-2 {
-      animation-duration: 6s; }
-    .animation__mover-1 {
-      animation-duration: 4s; }
     .animation__mover-div {
       position: relative;
       width: 100%;
@@ -216,16 +214,6 @@ body {
       animation-timing-function: linear;
       animation-iteration-count: infinite;
       animation-play-state: paused; }
-      .animation__mover-div-5 {
-        animation-duration: 12s; }
-      .animation__mover-div-4 {
-        animation-duration: 10s; }
-      .animation__mover-div-3 {
-        animation-duration: 8s; }
-      .animation__mover-div-2 {
-        animation-duration: 6s; }
-      .animation__mover-div-1 {
-        animation-duration: 4s; }
   .animation__image {
     width: 6rem;
     height: 6rem;
@@ -243,16 +231,6 @@ body {
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     animation-play-state: paused; }
-    .animation__turner-5 {
-      animation-duration: 12s; }
-    .animation__turner-4 {
-      animation-duration: 10s; }
-    .animation__turner-3 {
-      animation-duration: 8s; }
-    .animation__turner-2 {
-      animation-duration: 6s; }
-    .animation__turner-1 {
-      animation-duration: 4s; }
 
 @keyframes waggle {
   0% {

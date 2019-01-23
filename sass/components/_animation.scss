@@ -52,6 +52,21 @@ $bee-size: 6rem;
     right: 1rem;
     top: 1rem;
     z-index: 100;
+    box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+
+    &:focus {
+      outline: 0;
+      box-shadow: 0.4rem 0.4rem 0.5rem rgba(0, 0, 0, 0.1);
+    }
+
+    &:hover {
+      box-shadow: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
+    }
+
+    &:active {
+      // outline: 0;
+      box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+    }
   }
 
   &__mover {
@@ -65,22 +80,6 @@ $bee-size: 6rem;
     animation-iteration-count: infinite;
     animation-play-state: paused;
 
-    &-5 {
-      animation-duration: 12s;
-    }
-    &-4 {
-      animation-duration: 10s;
-    }
-    &-3 {
-      animation-duration: 8s;
-    }
-    &-2 {
-      animation-duration: 6s;
-    }
-    &-1 {
-      animation-duration: 4s;
-    }
-
     &-div {
       position: relative;
       width: 100%;
@@ -89,22 +88,6 @@ $bee-size: 6rem;
       animation-timing-function: linear;
       animation-iteration-count: infinite;
       animation-play-state: paused;
-
-      &-5 {
-        animation-duration: 12s;
-      }
-      &-4 {
-        animation-duration: 10s;
-      }
-      &-3 {
-        animation-duration: 8s;
-      }
-      &-2 {
-        animation-duration: 6s;
-      }
-      &-1 {
-        animation-duration: 4s;
-      }
     }
   }
 
@@ -127,74 +110,5 @@ $bee-size: 6rem;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     animation-play-state: paused;
-
-    &-5 {
-      animation-duration: 12s;
-    }
-    &-4 {
-      animation-duration: 10s;
-    }
-    &-3 {
-      animation-duration: 8s;
-    }
-    &-2 {
-      animation-duration: 6s;
-    }
-    &-1 {
-      animation-duration: 4s;
-    }
-  }
-}
-
-@keyframes waggle {
-  0% {
-    transform: rotate(0deg);
-  }
-  50% {
-    transform: rotate(-20deg);
-  }
-  100% {
-    transform: rotate(20deg);
-  }
-}
-
-@keyframes turnBee {
-  35% {
-    transform: rotate(0deg);
-  }
-  50% {
-    transform: rotate(180deg);
-  }
-  85% {
-    transform: rotate(180deg);
-  }
-  100% {
-    transform: rotate(0deg);
-  }
-}
-
-@keyframes moveBee {
-  35%,
-  50% {
-    transform: translateY(calc(-100% + #{$bee-size}));
-  }
-  85%,
-  100% {
-    transform: translateY(0%);
-  }
-}
-
-@keyframes moveBoxInPath {
-  35% {
-    transform: rotate(0deg);
-  }
-  50% {
-    transform: rotate(180deg);
-  }
-  85% {
-    transform: rotate(180deg);
-  }
-  100% {
-    transform: rotate(0deg);
   }
 }

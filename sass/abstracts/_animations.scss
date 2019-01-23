@@ -1,0 +1,52 @@
+@keyframes waggle {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-20deg);
+  }
+  100% {
+    transform: rotate(20deg);
+  }
+}
+
+@keyframes turnBee {
+  35% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  85% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes moveBee {
+  35%,
+  50% {
+    transform: translateY(calc(-100% + #{$bee-size}));
+  }
+  85%,
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+@keyframes moveBoxInPath {
+  35% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  85% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
