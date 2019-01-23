@@ -20,6 +20,10 @@ body {
   position: relative;
   height: 100vw;
   max-height: 800px; }
+  .section__simulation-2-closed {
+    height: 0;
+    visibility: hidden;
+    margin-bottom: 0; }
 
 .section__animation {
   position: relative;
@@ -27,7 +31,8 @@ body {
   max-height: 800px; }
   .section__animation-closed {
     height: 0;
-    visibility: hidden; }
+    visibility: hidden;
+    margin-bottom: 0; }
 
 .simulation-2 {
   background-color: #03bb03;
@@ -159,6 +164,9 @@ body {
     width: 100%;
     position: relative;
     background-color: gold; }
+    .animation__canvas-turner {
+      height: 100%;
+      width: 100%; }
   .animation__button-toggle {
     position: absolute;
     top: 1rem;

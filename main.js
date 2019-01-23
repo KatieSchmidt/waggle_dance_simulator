@@ -59,5 +59,6 @@ for (var i = 0; i < simulationFieldFlowerImgs.length; i++) {
     let newFlower = createFlowerObject(e);
     console.log(newFlower);
     openOrCloseAnimation();
+    changeAngleOfSimulation(newFlower);
   };
 }

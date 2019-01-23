@@ -54,7 +54,7 @@
                 muted
                 loop
               >
-                <!-- <source src="./img/waggle.mp4" type="video/mp4" /> -->
+                <source src="./img/waggle.mp4" type="video/mp4" />
                 Your browser is not supported!
               </video>
             </div>
@@ -93,7 +93,7 @@
           </div>
         </div>
       </section>
-      <section class="section__simulation-2">
+      <section class="section__simulation-2" id="section__simulation-2">
           <div class="simulation-2">
               <div class="simulation-2__sky">
                 <img
@@ -138,23 +138,26 @@
                   <img src="./img/yellow.png" alt="yellow flower" class="simulation-2__flower-img y-coordinate__center x-coordinate__negative-4">
               </div>
       </section>
-      <section class="section__animation" id="section__animation">
+      <section class="section__animation section__animation-closed" id="section__animation">
           <div class="animation" id="animation">
             <div class="animation__canvas">
                 <button class="animation__button-toggle" id="animation__button-toggle">
                     start/stop
-                  </button>  
-
+                </button>  
                 <button class="animation__button-close" id="animation__button-close">Close</button>
-                <div class="animation__mover animation__mover-5" id="animation__mover">
-                  <div class="animation__mover-div animation__mover-div-5" id="animation__mover-div">
-                    <div class="animation__turner animation__turner-5" id="animation__turner">
-                      <div class="animation__image animation__image-5 animation__image-2">
-                          <img src="./img/bee.png" alt="animated honey bee" class="animation__image animation__image-5" id="animation__image">
+
+                <div class="animation__canvas-turner" id="animation__canvas-turner">
+                  <div class="animation__mover animation__mover-2" id="animation__mover">
+                    <div class="animation__mover-div animation__mover-div-2" id="animation__mover-div">
+                      <div class="animation__turner animation__turner-2" id="animation__turner">
+                        <div class="animation__image animation__image-2 animation__image-2">
+                            <img src="./img/bee.png" alt="animated honey bee" class="animation__image animation__image-2" id="animation__image">
+                        </div>
                       </div>
-                    </div>
-                  </div> 
-                </div> 
+                    </div> 
+                  </div>
+                </div>
+                 
             </div>
           </div>
       </section>

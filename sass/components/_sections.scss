@@ -9,6 +9,12 @@
     position: relative;
     height: 100vw;
     max-height: 800px;
+
+    &-closed {
+      height: 0;
+      visibility: hidden;
+      margin-bottom: 0;
+    }
   }
 
   &__animation {
@@ -19,6 +25,7 @@
     &-closed {
       height: 0;
       visibility: hidden;
+      margin-bottom: 0;
     }
   }
 }

@@ -15,6 +15,11 @@ $bee-size: 6rem;
     width: 100%;
     position: relative;
     background-color: gold;
+
+    &-turner {
+      height: 100%;
+      width: 100%;
+    }
   }
 
   &__button-toggle {

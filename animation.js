@@ -5,12 +5,24 @@ const animationImage = document.getElementById("animation__image");
 const animationTurner = document.getElementById("animation__turner");
 const closeButton = document.getElementById("animation__button-close");
 const animationSection = document.getElementById("section__animation");
+const animationCanvasTurner = document.getElementById(
+  "animation__canvas-turner"
+);
+const simulationSection = document.getElementById("section__simulation-2");
+
+function changeAngleOfSimulation(flowerObject) {
+  animationCanvasTurner.style.webkitTransform = `rotate(${
+    flowerObject.angle
+  }deg)`;
+}
 
 function openOrCloseAnimation() {
   if (animationSection.classList.length > 1) {
     animationSection.classList.remove("section__animation-closed");
+    simulationSection.classList.add("section__simulation-2-closed");
   } else {
     animationSection.classList.add("section__animation-closed");
+    simulationSection.classList.remove("section__simulation-2-closed");
   }
 }
 
