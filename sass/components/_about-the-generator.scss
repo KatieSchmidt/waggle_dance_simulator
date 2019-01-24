@@ -3,5 +3,9 @@
     &__header {
       @include sectionHeader;
     }
+
+    &__paragraph {
+      @include sectionInfo;
+    }
   }
 }

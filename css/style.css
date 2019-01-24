@@ -86,6 +86,11 @@ body {
   margin-bottom: 2rem;
   text-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.479); }
 
+.about-the-dance__what-it-is__answer {
+  font-size: 1.5rem;
+  width: 80%;
+  margin: 0 10% 0 10%; }
+
 .about-the-dance__how-it-looks__header {
   font-size: 2rem;
   color: #580808;
@@ -94,6 +99,16 @@ body {
   margin-top: 2rem;
   margin-bottom: 2rem;
   text-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.479); }
+
+.about-the-dance__how-it-looks__answer-paragraph {
+  font-size: 1.5rem;
+  width: 80%;
+  margin: 0 10% 0 10%; }
+
+.about-the-dance__how-it-looks__answer-video {
+  align-content: center;
+  width: 80%;
+  margin: 2rem 10% 2rem 10%; }
 
 .about-the-dance__how-it-is-choreographed__header {
   font-size: 2rem;
@@ -104,6 +119,11 @@ body {
   margin-bottom: 2rem;
   text-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.479); }
 
+.about-the-dance__how-it-is-choreographed__answer-paragraph {
+  font-size: 1.5rem;
+  width: 80%;
+  margin: 0 10% 0 10%; }
+
 .about-the-generator__how-it-works__header {
   font-size: 2rem;
   color: #580808;
@@ -112,6 +132,11 @@ body {
   margin-top: 2rem;
   margin-bottom: 2rem;
   text-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.479); }
+
+.about-the-generator__how-it-works__paragraph {
+  font-size: 1.5rem;
+  width: 80%;
+  margin: 0 10% 0 10%; }
 
 .simulation-2 {
   background-color: #03bb03;

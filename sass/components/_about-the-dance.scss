@@ -3,19 +3,38 @@
     &__header {
       @include sectionHeader;
     }
-    // &__answer {
-    // }
+    &__answer {
+      @include sectionInfo;
+    }
   }
 
   &__how-it-looks {
     &__header {
       @include sectionHeader;
     }
+
+    &__answer {
+      &-paragraph {
+        @include sectionInfo;
+      }
+
+      &-video {
+        align-content: center;
+        width: 80%;
+        margin: 2rem 10% 2rem 10%;
+      }
+    }
   }
 
   &__how-it-is-choreographed {
     &__header {
       @include sectionHeader;
+    }
+
+    &__answer {
+      &-paragraph {
+        @include sectionInfo;
+      }
     }
   }
 }
