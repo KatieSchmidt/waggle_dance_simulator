@@ -1,0 +1,21 @@
+.about-the-dance {
+  &__what-it-is {
+    &__header {
+      @include sectionHeader;
+    }
+    // &__answer {
+    // }
+  }
+
+  &__how-it-looks {
+    &__header {
+      @include sectionHeader;
+    }
+  }
+
+  &__how-it-is-choreographed {
+    &__header {
+      @include sectionHeader;
+    }
+  }
+}

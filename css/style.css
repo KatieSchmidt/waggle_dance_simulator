@@ -77,6 +77,42 @@ body {
     visibility: hidden;
     margin-bottom: 0; }
 
+.about-the-dance__what-it-is__header {
+  font-size: 2rem;
+  color: #580808;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  text-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.479); }
+
+.about-the-dance__how-it-looks__header {
+  font-size: 2rem;
+  color: #580808;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  text-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.479); }
+
+.about-the-dance__how-it-is-choreographed__header {
+  font-size: 2rem;
+  color: #580808;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  text-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.479); }
+
+.about-the-generator__how-it-works__header {
+  font-size: 2rem;
+  color: #580808;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  text-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.479); }
+
 .simulation-2 {
   background-color: #03bb03;
   position: absolute;

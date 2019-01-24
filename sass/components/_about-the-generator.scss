@@ -1,0 +1,7 @@
+.about-the-generator {
+  &__how-it-works {
+    &__header {
+      @include sectionHeader;
+    }
+  }
+}
