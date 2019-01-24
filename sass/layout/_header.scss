@@ -1,0 +1,28 @@
+.header {
+  position: absolute;
+  height: 70%;
+  width: 70%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  &__content {
+    height: 100%;
+    width: 100%;
+    transform: translate(-50%, -50);
+    position: relative;
+    text-align: center;
+
+    &-image {
+      width: 10rem;
+      height: auto;
+    }
+
+    &-text {
+      margin-top: 3rem;
+      font-size: 4rem;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+  }
+}

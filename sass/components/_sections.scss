@@ -1,4 +1,10 @@
 .section {
+  &__header {
+    position: relative;
+    height: 50vh;
+    background-image: url(../img/honeycomb-bg.png);
+    background-size: cover;
+  }
   &__simulation {
     position: relative;
     height: 100vw;

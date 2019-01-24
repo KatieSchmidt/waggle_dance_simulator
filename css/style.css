@@ -9,7 +9,50 @@ html {
   font-size: 62.5%; }
 
 body {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  background-color: #f8e264; }
+
+@keyframes waggle {
+  0% {
+    transform: rotate(0deg); }
+  50% {
+    transform: rotate(-20deg); }
+  100% {
+    transform: rotate(20deg); } }
+
+@keyframes turnBee {
+  35% {
+    transform: rotate(0deg); }
+  50% {
+    transform: rotate(180deg); }
+  85% {
+    transform: rotate(180deg); }
+  100% {
+    transform: rotate(0deg); } }
+
+@keyframes moveBee {
+  35%,
+  50% {
+    transform: translateY(calc(-100% + 6rem)); }
+  85%,
+  100% {
+    transform: translateY(0%); } }
+
+@keyframes moveBoxInPath {
+  35% {
+    transform: rotate(0deg); }
+  50% {
+    transform: rotate(180deg); }
+  85% {
+    transform: rotate(180deg); }
+  100% {
+    transform: rotate(0deg); } }
+
+.section__header {
+  position: relative;
+  height: 50vh;
+  background-image: url(../img/honeycomb-bg.png);
+  background-size: cover; }
 
 .section__simulation {
   position: relative;
@@ -163,7 +206,9 @@ body {
     height: 100%;
     width: 100%;
     position: relative;
-    background-color: gold; }
+    background-color: gold;
+    background-image: url(../img/honeycomb-bg.png);
+    background-size: cover; }
     .animation__canvas-turner {
       height: 100%;
       width: 100%; }
@@ -232,38 +277,24 @@ body {
     animation-iteration-count: infinite;
     animation-play-state: paused; }
 
-@keyframes waggle {
-  0% {
-    transform: rotate(0deg); }
-  50% {
-    transform: rotate(-20deg); }
-  100% {
-    transform: rotate(20deg); } }
-
-@keyframes turnBee {
-  35% {
-    transform: rotate(0deg); }
-  50% {
-    transform: rotate(180deg); }
-  85% {
-    transform: rotate(180deg); }
-  100% {
-    transform: rotate(0deg); } }
-
-@keyframes moveBee {
-  35%,
-  50% {
-    transform: translateY(calc(-100% + 6rem)); }
-  85%,
-  100% {
-    transform: translateY(0%); } }
-
-@keyframes moveBoxInPath {
-  35% {
-    transform: rotate(0deg); }
-  50% {
-    transform: rotate(180deg); }
-  85% {
-    transform: rotate(180deg); }
-  100% {
-    transform: rotate(0deg); } }
+.header {
+  position: absolute;
+  height: 70%;
+  width: 70%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+  .header__content {
+    height: 100%;
+    width: 100%;
+    transform: translate(-50%, -50);
+    position: relative;
+    text-align: center; }
+    .header__content-image {
+      width: 10rem;
+      height: auto; }
+    .header__content-text {
+      margin-top: 3rem;
+      font-size: 4rem;
+      font-weight: 700;
+      text-transform: uppercase; }
