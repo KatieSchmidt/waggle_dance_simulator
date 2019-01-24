@@ -52,7 +52,8 @@ body {
   position: relative;
   height: 50vh;
   background-image: url(../img/honeycomb-bg.png);
-  background-size: cover; }
+  background-size: cover;
+  box-shadow: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.418); }
 
 .section__simulation {
   position: relative;
@@ -358,4 +359,5 @@ body {
       margin-top: 3rem;
       font-size: 4rem;
       font-weight: 700;
-      text-transform: uppercase; }
+      text-transform: uppercase;
+      text-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.418); }
