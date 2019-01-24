@@ -361,3 +361,22 @@ body {
       font-weight: 700;
       text-transform: uppercase;
       text-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.418); }
+
+.footer {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  text-align: center;
+  background-color: #ac4205;
+  color: #f8e264;
+  font-size: 1.2rem;
+  letter-spacing: 2px; }
+  .footer__attributes-button {
+    font-size: 1rem;
+    display: inline;
+    cursor: pointer;
+    border-bottom: 1px solid; }
+  .footer__attributes {
+    visibility: visible; }
+    .footer__attributes-hidden {
+      visibility: hidden;
+      display: none; }

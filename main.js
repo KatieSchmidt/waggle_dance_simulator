@@ -1,3 +1,21 @@
+const attributes = document.getElementById("footer__attributes");
+
+const attributesButton = document.getElementById("footer__attributes-button");
+
+const attributesSpanSymbol = document.getElementById("icon__attributes-symbol");
+
+function hideOrShowAttributes() {
+  if (attributes.classList.length === 1) {
+    attributes.classList.add("footer__attributes-hidden");
+    attributesSpanSymbol.innerHTML = "+";
+  } else {
+    attributes.classList.remove("footer__attributes-hidden");
+    attributesSpanSymbol.innerHTML = "-";
+  }
+}
+
+attributesButton.onclick = hideOrShowAttributes;
+
 function getDistanceFromHive(lengthOne, lengthTwo) {
   return Math.sqrt(lengthOne * lengthOne + lengthTwo * lengthTwo);
 }
