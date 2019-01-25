@@ -1,29 +1,33 @@
 .header {
+  overflow: hidden;
   position: absolute;
-  height: 70%;
-  width: 70%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  height: 100%;
+  width: 100%;
 
   &__content {
     height: 100%;
     width: 100%;
-    transform: translate(-50%, -50);
     position: relative;
     text-align: center;
 
     &-image {
-      width: 10rem;
-      height: auto;
+      position: absolute;
+      top: 5%;
+      left: 50%;
+      transform: translateX(-50%);
+      height: 50%;
+      width: auto;
     }
 
     &-text {
-      margin-top: 3rem;
-      font-size: 4rem;
+      font-size: 3rem;
       font-weight: 700;
       text-transform: uppercase;
       text-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.5);
+      position: absolute;
+      bottom: 5%;
+      left: 50%;
+      transform: translateX(-50%);
     }
   }
 }

@@ -1,4 +1,5 @@
 .animation {
+  overflow: hidden;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -23,6 +24,11 @@
   }
 
   &__button-toggle {
+    // -webkit-appearance: none;
+    // -moz-appearance: none;
+    // appearance: none;
+    @include experimental(appearance, none);
+    background-color: red;
     position: absolute;
     top: 1rem;
     left: 1rem;
@@ -47,10 +53,14 @@
   }
 
   &__button-close {
+    // -webkit-appearance: none;
+    // -moz-appearance: none;
+    // appearance: none;
     padding: 3px;
     position: absolute;
     right: 1rem;
     top: 1rem;
+    border-radius: 5px;
     z-index: 100;
     box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
 
