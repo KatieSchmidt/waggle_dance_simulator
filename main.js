@@ -39,16 +39,16 @@ const simulationFieldFlowerImgs = document.getElementsByClassName(
 function changeSpeedOfAnimation(flowerObject) {
   let totalSeconds =
     flowerObject.distanceFromHive * 2 + flowerObject.distanceFromHive * 2 * 0.2;
-  animationMover.style.animationDuration = `${totalSeconds}s`;
-  animationMoverDiv.style.animationDuration = `${totalSeconds}s`;
-  animationTurner.style.animationDuration = `${totalSeconds}s`;
+  animationMover.style.animationDuration = totalSeconds + "s";
+  animationMoverDiv.style.animationDuration = totalSeconds + "s";
+  animationTurner.style.animationDuration = totalSeconds + "s";
 }
 
 function changeAngleOfSimulation(flowerObject) {
-  animationCanvasTurner.style.webkitTransform = `rotate(${
-    flowerObject.angle
-  }deg)`;
-  animationCanvasTurner.style.transform = `rotate(${flowerObject.angle}deg)`;
+  animationCanvasTurner.style.webkitTransform =
+    "rotate(" + flowerObject.angle + "deg)";
+  animationCanvasTurner.style.transform =
+    "rotate(" + flowerObject.angle + "deg)";
 }
 
 function openAnimation() {
