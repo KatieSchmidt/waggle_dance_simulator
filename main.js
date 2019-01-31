@@ -159,8 +159,8 @@ for (var i = 0; i < simulationFieldFlowerImgs.length; i++) {
     openAnimation();
     changeAngleOfSimulation(newFlower);
     changeSpeedOfAnimation(newFlower);
-    for (let animation of animations) {
-      toggleAnimations(animation);
+    for (var i = 0; i < animations.length; i++) {
+      toggleAnimations(animations[i]);
     }
   };
 }
