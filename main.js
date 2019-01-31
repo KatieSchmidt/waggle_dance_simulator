@@ -63,24 +63,24 @@ function closeAnimation() {
 
 function toggleAnimations(content) {
   if (
-    content.style.animationPlayState === "" ||
-    content.style.animationPlayState === "paused" ||
     content.style.webkitAnimationPlayState === "" ||
-    content.style.webkitAnimationPlayState === "paused"
+    content.style.webkitAnimationPlayState === "paused" ||
+    content.style.animationPlayState === "" ||
+    content.style.animationPlayState === "paused"
   ) {
-    content.style.animationPlayState = "running";
     content.style.webkitAnimationPlayState = "running";
+    content.style.animationPlayState = "running";
   } else {
-    content.style.animationPlayState = "paused";
     content.style.webkitAnimationPlayState = "paused";
+    content.style.animationPlayState = "paused";
   }
 }
 
 function stopAnimations() {
   console.log("stopping to paused");
   for (var i = 0; i < animations.length; i++) {
-    animations[i].style.animationPlayState = "paused";
     animations[i].style.webkitAnimationPlayState = "paused";
+    animations[i].style.animationPlayState = "paused";
   }
 }
 
