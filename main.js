@@ -65,14 +65,14 @@ function toggleAnimations(content) {
   if (
     content.style.animationPlayState === "" ||
     content.style.animationPlayState === "paused" ||
-    content.style.WebKitAnimationPlayState === "" ||
-    content.style.WebKitAnimationPlayState === "paused"
+    content.style.webkitAnimationPlayState === "" ||
+    content.style.webkitAnimationPlayState === "paused"
   ) {
     content.style.animationPlayState = "running";
-    content.style.WebKitAnimationPlayState = "running";
+    content.style.webkitAnimationPlayState = "running";
   } else {
     content.style.animationPlayState = "paused";
-    content.style.WebKitAnimationPlayState = "paused";
+    content.style.webkitAnimationPlayState = "paused";
   }
 }
 
@@ -80,7 +80,7 @@ function stopAnimations() {
   console.log("stopping to paused");
   for (var i = 0; i < animations.length; i++) {
     animations[i].style.animationPlayState = "paused";
-    animations[i].style.WebKitAnimationPlayState = "paused";
+    animations[i].style.webkitAnimationPlayState = "paused";
   }
 }
 
