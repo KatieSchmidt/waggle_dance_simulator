@@ -80,7 +80,7 @@ function toggleAnimations(content) {
 
 function stopAnimations() {
   console.log("stopping to paused");
-  for (let animation of animations) {
+  for (const animation of animations) {
     animation.style.animationPlayState = "paused";
     animation.style.WebKitAnimationPlayState = "paused";
   }
@@ -168,7 +168,7 @@ for (var i = 0; i < simulationFieldFlowerImgs.length; i++) {
 }
 
 animationToggler.onclick = () => {
-  for (let animation of animations) {
+  for (const animation of animations) {
     toggleAnimations(animation);
   }
 };
