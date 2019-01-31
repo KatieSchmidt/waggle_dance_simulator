@@ -68,11 +68,9 @@ function toggleAnimations(content) {
     content.style.WebKitAnimationPlayState === "" ||
     content.style.WebKitAnimationPlayState === "paused"
   ) {
-    console.log("toggling to running");
     content.style.animationPlayState = "running";
     content.style.WebKitAnimationPlayState = "running";
   } else {
-    console.log("toggling to paused");
     content.style.animationPlayState = "paused";
     content.style.WebKitAnimationPlayState = "paused";
   }
@@ -80,9 +78,9 @@ function toggleAnimations(content) {
 
 function stopAnimations() {
   console.log("stopping to paused");
-  for (const animation of animations) {
-    animation.style.animationPlayState = "paused";
-    animation.style.WebKitAnimationPlayState = "paused";
+  for (var i = 0; i < animations.length; i++) {
+    animations[i].style.animationPlayState = "paused";
+    animations[i].style.WebKitAnimationPlayState = "paused";
   }
 }
 
@@ -111,8 +109,8 @@ function createFlowerObject(e) {
   let xDist;
   let yDist;
 
-  for (let className of classList) {
-    let classNamePair = className.split("__");
+  for (var i = 0; i < classList.length; i++) {
+    let classNamePair = classList[i].split("__");
 
     if (classNamePair[0] === "x-coordinate") {
       if (classNamePair[1] === "center") {
@@ -168,8 +166,8 @@ for (var i = 0; i < simulationFieldFlowerImgs.length; i++) {
 }
 
 animationToggler.onclick = () => {
-  for (const animation of animations) {
-    toggleAnimations(animation);
+  for (var i = 0; i < animations.length; i++) {
+    toggleAnimations(animations[i]);
   }
 };
 
