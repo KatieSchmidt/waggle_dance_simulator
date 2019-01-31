@@ -154,7 +154,7 @@ function Flower(xDistance, yDistance) {
 //it creates a flower object and then uses that flower's
 //attributes to manipulate the animation.
 for (var i = 0; i < simulationFieldFlowerImgs.length; i++) {
-  simulationFieldFlowerImgs[i].onclick = e => {
+  simulationFieldFlowerImgs[i].onclick = function(e) {
     let newFlower = createFlowerObject(e);
     openAnimation();
     changeAngleOfSimulation(newFlower);
@@ -165,13 +165,13 @@ for (var i = 0; i < simulationFieldFlowerImgs.length; i++) {
   };
 }
 
-animationToggler.onclick = () => {
+animationToggler.onclick = function() {
   for (var i = 0; i < animations.length; i++) {
     toggleAnimations(animations[i]);
   }
 };
 
-closeButton.onclick = () => {
+closeButton.onclick = function() {
   stopAnimations();
   closeAnimation();
 };
