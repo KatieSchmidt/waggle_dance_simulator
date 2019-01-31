@@ -1,3 +1,5 @@
+"use strict";
+
 //footer consts
 const attributes = document.getElementById("footer__attributes");
 const attributesButton = document.getElementById("footer__attributes-button");
@@ -78,7 +80,7 @@ function toggleAnimations(content) {
 
 function stopAnimations() {
   console.log("stopping to paused");
-  for (animation of animations) {
+  for (let animation of animations) {
     animation.style.animationPlayState = "paused";
     animation.style.WebKitAnimationPlayState = "paused";
   }
@@ -109,7 +111,7 @@ function createFlowerObject(e) {
   let xDist;
   let yDist;
 
-  for (className of classList) {
+  for (let className of classList) {
     let classNamePair = className.split("__");
 
     if (classNamePair[0] === "x-coordinate") {
@@ -159,14 +161,14 @@ for (var i = 0; i < simulationFieldFlowerImgs.length; i++) {
     openAnimation();
     changeAngleOfSimulation(newFlower);
     changeSpeedOfAnimation(newFlower);
-    for (animation of animations) {
+    for (let animation of animations) {
       toggleAnimations(animation);
     }
   };
 }
 
 animationToggler.onclick = () => {
-  for (animation of animations) {
+  for (let animation of animations) {
     toggleAnimations(animation);
   }
 };

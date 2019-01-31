@@ -27,6 +27,8 @@
   }
 
   &__button-toggle {
+    background-color: gold;
+    text-transform: uppercase;
     position: absolute;
     top: 1rem;
     left: 1rem;
@@ -50,6 +52,8 @@
   }
 
   &__button-close {
+    background-color: gold;
+    text-transform: uppercase;
     padding: 3px;
     position: absolute;
     right: 1rem;
