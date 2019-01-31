@@ -1,9 +1,90 @@
+//footer consts
 const attributes = document.getElementById("footer__attributes");
-
 const attributesButton = document.getElementById("footer__attributes-button");
-
 const attributesSpanSymbol = document.getElementById("icon__attributes-symbol");
 
+//buttons
+const animationToggler = document.getElementById("animation__button-toggle");
+const closeButton = document.getElementById("animation__button-close");
+
+//divs with keyframes
+const animationMover = document.getElementById("animation__mover");
+const animationMoverDiv = document.getElementById("animation__mover-div");
+const animationImage = document.getElementById("animation__image");
+const animationTurner = document.getElementById("animation__turner");
+const animationCanvasTurner = document.getElementById(
+  "animation__canvas-turner"
+);
+
+//keyframe animation divs
+const animations = [
+  animationMover,
+  animationMoverDiv,
+  animationTurner,
+  animationImage
+];
+
+//sections
+const animationSection = document.getElementById("section__animation");
+const simulationSection = document.getElementById("section__simulation-2");
+
+//flower objects
+const simulationFieldFlowerImgs = document.getElementsByClassName(
+  "simulation-2__flower-img"
+);
+
+//animation functions
+function changeSpeedOfAnimation(flowerObject) {
+  let totalSeconds =
+    flowerObject.distanceFromHive * 2 + flowerObject.distanceFromHive * 2 * 0.2;
+  animationMover.style.animationDuration = `${totalSeconds}s`;
+  animationMoverDiv.style.animationDuration = `${totalSeconds}s`;
+  animationTurner.style.animationDuration = `${totalSeconds}s`;
+}
+
+function changeAngleOfSimulation(flowerObject) {
+  animationCanvasTurner.style.webkitTransform = `rotate(${
+    flowerObject.angle
+  }deg)`;
+  animationCanvasTurner.style.transform = `rotate(${flowerObject.angle}deg)`;
+}
+
+function openAnimation() {
+  animationSection.classList.remove("section__animation-closed");
+  simulationSection.classList.add("section__simulation-2-closed");
+}
+
+function closeAnimation() {
+  animationSection.classList.add("section__animation-closed");
+  simulationSection.classList.remove("section__simulation-2-closed");
+}
+
+function toggleAnimations(content) {
+  if (
+    content.style.animationPlayState === "" ||
+    content.style.animationPlayState === "paused" ||
+    content.style.WebKitAnimationPlayState === "" ||
+    content.style.WebKitAnimationPlayState === "paused"
+  ) {
+    console.log("toggling to running");
+    content.style.animationPlayState = "running";
+    content.style.WebKitAnimationPlayState = "running";
+  } else {
+    console.log("toggling to paused");
+    content.style.animationPlayState = "paused";
+    content.style.WebKitAnimationPlayState = "paused";
+  }
+}
+
+function stopAnimations() {
+  console.log("stopping to paused");
+  for (animation of animations) {
+    animation.style.animationPlayState = "paused";
+    animation.style.WebKitAnimationPlayState = "paused";
+  }
+}
+
+//footer functions
 function hideOrShowAttributes() {
   if (attributes.classList.length === 1) {
     attributes.classList.add("footer__attributes-hidden");
@@ -14,8 +95,7 @@ function hideOrShowAttributes() {
   }
 }
 
-attributesButton.onclick = hideOrShowAttributes;
-
+//flower creation functions
 function getDistanceFromHive(lengthOne, lengthTwo) {
   return Math.sqrt(lengthOne * lengthOne + lengthTwo * lengthTwo);
 }
@@ -68,16 +148,32 @@ function Flower(xDistance, yDistance) {
   this.angle = calcDegreesFromXAxis(yDistance, xDistance);
 }
 
-const simulationFieldFlowerImgs = document.getElementsByClassName(
-  "simulation-2__flower-img"
-);
+//function calls
 
+//this is when you click on any flower in the simulation
+//it creates a flower object and then uses that flower's
+//attributes to manipulate the animation.
 for (var i = 0; i < simulationFieldFlowerImgs.length; i++) {
   simulationFieldFlowerImgs[i].onclick = e => {
     let newFlower = createFlowerObject(e);
     openAnimation();
-    startAnimations(animations);
     changeAngleOfSimulation(newFlower);
     changeSpeedOfAnimation(newFlower);
+    for (animation of animations) {
+      toggleAnimations(animation);
+    }
   };
 }
+
+animationToggler.onclick = () => {
+  for (animation of animations) {
+    toggleAnimations(animation);
+  }
+};
+
+closeButton.onclick = () => {
+  stopAnimations();
+  closeAnimation();
+};
+
+attributesButton.onclick = hideOrShowAttributes;

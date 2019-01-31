@@ -17,11 +17,12 @@
 
   &__attributes {
     visibility: visible;
+    padding-top: 1.5rem;
 
     &-hidden {
       visibility: hidden;
       display: none;
-      // height: 0;
+      height: 0;
     }
   }
 }

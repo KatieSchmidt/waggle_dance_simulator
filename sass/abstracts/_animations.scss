@@ -26,6 +26,9 @@
 }
 
 @keyframes moveBee {
+  35% {
+    transform: translateY(0%);
+  }
   35%,
   50% {
     transform: translateY(calc(-100% + #{$bee-size}));
