@@ -76,8 +76,7 @@ body {
   height: 100vw;
   max-height: 800px; }
   .section__animation-closed {
-    height: 0;
-    visibility: hidden;
+    display: none;
     margin-bottom: 0; }
 
 .about-the-dance__what-it-is__header {
@@ -278,6 +277,7 @@ body {
     background-image: url(../img/honeycomb-bg.png);
     background-size: cover; }
     .animation__canvas-turner {
+      border-radius: 50%;
       height: 100%;
       width: 100%; }
   .animation__button-toggle {
@@ -323,9 +323,9 @@ body {
     animation-iteration-count: infinite;
     animation-play-state: paused; }
     .animation__mover-div {
-      background-color: orange;
       border-radius: 50%;
       z-index: -2;
+      overflow: hidden;
       position: relative;
       width: 100%;
       height: 100%;
