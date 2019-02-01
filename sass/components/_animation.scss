@@ -96,6 +96,7 @@
       position: relative;
       width: 100%;
       height: 100%;
+      -webkit-animation: moveBee;
       animation: moveBee;
       animation-timing-function: linear;
       animation-iteration-count: infinite;
