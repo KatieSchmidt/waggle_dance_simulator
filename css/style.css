@@ -36,7 +36,7 @@ body {
     transform: translateY(0%); }
   35%,
   50% {
-    transform: translateY(calc(-100% + 6rem)); }
+    transform: translateY(-85%); }
   85%,
   100% {
     transform: translateY(0%); } }
@@ -340,8 +340,8 @@ body {
       animation-iteration-count: infinite;
       animation-play-state: paused; }
   .animation__image {
-    width: 6rem;
-    height: 6rem;
+    width: 4rem;
+    height: 4rem;
     animation: waggle;
     animation-duration: 0.25s;
     animation-iteration-count: infinite;
@@ -349,9 +349,9 @@ body {
   .animation__turner {
     position: absolute;
     bottom: 0;
-    left: calc(50% - 6rem/ 2);
-    height: 6rem;
-    width: 6rem;
+    left: calc(50% - 4rem/ 2);
+    height: 4rem;
+    width: 4rem;
     animation: turnBee;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
