@@ -351,7 +351,7 @@ body {
   .animation__turner {
     position: absolute;
     bottom: 0;
-    left: 50%;
+    left: calc(50% - 4rem/ 2);
     height: 4rem;
     width: 4rem;
     animation: turnBee;
