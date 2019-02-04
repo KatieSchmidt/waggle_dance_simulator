@@ -31,13 +31,16 @@ body {
     transform: rotate(0deg); } }
 
 @keyframes moveBee {
-  0%,
+  0% {
+    transform: translateY(0%); }
   35% {
     transform: translateY(0%); }
-  35%,
+  35% {
+    transform: translateY(-85%); }
   50% {
     transform: translateY(-85%); }
-  85%,
+  85% {
+    transform: translateY(0%); }
   100% {
     transform: translateY(0%); } }
 
@@ -68,8 +71,7 @@ body {
   height: 100vw;
   max-height: 800px; }
   .section__simulation-2-closed {
-    height: 0;
-    visibility: hidden;
+    display: none;
     margin-bottom: 0; }
 
 .section__animation {
@@ -79,6 +81,10 @@ body {
   .section__animation-closed {
     display: none;
     margin-bottom: 0; }
+
+.section__playground {
+  height: 100vw;
+  max-height: 800px; }
 
 .about-the-dance__what-it-is__header {
   font-size: 2rem;
@@ -356,6 +362,34 @@ body {
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     animation-play-state: paused; }
+
+.playground {
+  height: 100%;
+  width: 100%;
+  position: relative; }
+  .playground__canvas {
+    height: 90%;
+    width: 90%;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    background-color: red;
+    overflow: hidden; }
+    .playground__canvas-outer {
+      height: 100%;
+      width: 100%;
+      position: relative;
+      animation: moveRight 5s infinite linear; }
+
+@keyframes moveRight {
+  0% {
+    transform: translateX(90%);
+    background-color: white; }
+  50% {
+    transform: translateX(-90%); }
+  100% {
+    transform: translate(); } }
 
 .header {
   overflow: hidden;

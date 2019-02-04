@@ -26,15 +26,21 @@
 }
 
 @keyframes moveBee {
-  0%,
+  0% {
+    transform: translateY(0%);
+  }
   35% {
     transform: translateY(0%);
   }
-  35%,
+  35% {
+    transform: translateY(-85%);
+  }
   50% {
     transform: translateY(-85%);
   }
-  85%,
+  85% {
+    transform: translateY(0%);
+  }
   100% {
     transform: translateY(0%);
   }
