@@ -115,7 +115,7 @@
   &__turner {
     position: absolute;
     bottom: 0;
-    left: calc(50% - #{$bee-size}/ 2);
+    left: 50%;
     height: $bee-size;
     width: $bee-size;
     animation: turnBee;

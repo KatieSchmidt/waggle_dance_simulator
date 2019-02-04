@@ -82,10 +82,6 @@ body {
     display: none;
     margin-bottom: 0; }
 
-.section__playground {
-  height: 100vw;
-  max-height: 800px; }
-
 .about-the-dance__what-it-is__header {
   font-size: 2rem;
   color: #580808;
@@ -355,41 +351,13 @@ body {
   .animation__turner {
     position: absolute;
     bottom: 0;
-    left: calc(50% - 4rem/ 2);
+    left: 50%;
     height: 4rem;
     width: 4rem;
     animation: turnBee;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     animation-play-state: paused; }
-
-.playground {
-  height: 100%;
-  width: 100%;
-  position: relative; }
-  .playground__canvas {
-    height: 90%;
-    width: 90%;
-    top: 50%;
-    left: 50%;
-    position: absolute;
-    transform: translate(-50%, -50%);
-    background-color: red;
-    overflow: hidden; }
-    .playground__canvas-outer {
-      height: 100%;
-      width: 100%;
-      position: relative;
-      animation: moveRight 5s infinite linear; }
-
-@keyframes moveRight {
-  0% {
-    transform: translateX(90%);
-    background-color: white; }
-  50% {
-    transform: translateX(-90%); }
-  100% {
-    transform: translate(); } }
 
 .header {
   overflow: hidden;
