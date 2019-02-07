@@ -258,9 +258,6 @@ body {
 .y-coordinate__negative-1 {
   top: 60%; }
 
-.one {
-  border: 1px red solid; }
-
 .animation {
   position: absolute;
   top: 50%;
